@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import studentsByCategory from "../../../constants/contents";
-import ColoredSection from "../../../components/ColoredSection";
+import studentsByCategory from "../../../../constants/contents";
+import ColoredSection from "../../../../components/ColoredSection";
 
 const MoreAchievers = ({ studentsByCategory }) => {
   const [visibleCards, setVisibleCards] = useState(4);

@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import studentsByCategory from "../../../constants/contents";
+import studentsByCategory from "../../../../constants/contents";
 import { HiArrowLeft, HiArrowRight } from "react-icons/hi2";
 import "./style.css";
 

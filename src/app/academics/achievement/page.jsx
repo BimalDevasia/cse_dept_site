@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaSquareFull } from "react-icons/fa6";
-import ColoredSection from "../../components/ColoredSection";
+import ColoredSection from "../../../components/ColoredSection";
 import Acheivers from "./acheivers/page";
 import AcheiversHorizontalScrollCarousel from "./acheiversHorizontalScroll/page";
 
