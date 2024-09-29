@@ -39,7 +39,7 @@ export default function Developers() {
       socialmediaimg3: "FaGithub",
     },
     {
-      img: "/ali.jpeg",
+      img: "/jerald.jpeg",
       name: "Jerald Joyson",
       position: "Full-Stack Developer",
       socialmedia1: "https://www.linkedin.com/in/jerald-joyson",
@@ -117,60 +117,61 @@ export default function Developers() {
         </h1>
         <div className="mt-6 w-full">
           <div className="flex space-x-8 animate-marquee">
-            {data.map((item, index) => (
-              <div
-                key={index}
-                className="inline-block min-w-[250px] md:min-w-[300px] transition-all duration-300 ease-in-out transform hover:-translate-y-10 relative group"
-              >
-                <Image
-                  src={item.img}
-                  alt="developer"
-                  width={500}
-                  height={200}
-                  className="rounded-[48px] w-auto h-[900px] md:h-[500px] object-cover"
-                />
-                <div className="mt-4">
-                  <h3 className="text-2xl md:text-3xl font-semibold">
-                    {item.name}
-                  </h3>
-                  <div className="flex gap-2 mt-1">
-                    <div className="relative mt-1 w-4 h-4 bg-[#d9d9d9] rounded-lg" />
-                    <h2 className="text-sm md:text-base font-mono  ">
-                      {item.position}
-                    </h2>
-                  </div>
-                  <div className="flex space-x-4 mt-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pb-4 ">
-                    <a
-                      href={item.socialmedia1}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {React.createElement(iconMap[item.socialmediaimg1], {
-                        className: "w-6 h-6 text-white hover:text-blue-500",
-                      })}
-                    </a>
-                    <a
-                      href={item.socialmedia2}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {React.createElement(iconMap[item.socialmediaimg2], {
-                        className: "w-6 h-6 text-white hover:text-blue-400",
-                      })}
-                    </a>
-                    <a
-                      href={item.socialmedia3}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {React.createElement(iconMap[item.socialmediaimg3], {
-                        className: "w-6 h-6 text-white hover:text-blue-400",
-                      })}
-                    </a>
+            {data &&
+              [...data, ...data].map((item, index) => (
+                <div
+                  key={index}
+                  className="inline-block min-w-[250px] md:min-w-[350px] transition-all duration-300 ease-in-out transform hover:-translate-y-10 relative group"
+                >
+                  <Image
+                    src={item.img}
+                    alt="developer"
+                    width={300}
+                    height={600}
+                    className="rounded-[48px] w-auto h-[900px] md:h-[500px] object-cover"
+                  />
+                  <div className="mt-4">
+                    <h3 className="text-2xl md:text-3xl font-semibold">
+                      {item.name}
+                    </h3>
+                    <div className="flex gap-2 mt-1">
+                      <div className="relative mt-1 w-4 h-4 bg-[#d9d9d9] rounded-lg" />
+                      <h2 className="text-sm md:text-base font-mono  ">
+                        {item.position}
+                      </h2>
+                    </div>
+                    <div className="flex space-x-4 mt-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pb-4 ">
+                      <a
+                        href={item.socialmedia1}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {React.createElement(iconMap[item.socialmediaimg1], {
+                          className: "w-6 h-6 text-white hover:text-blue-500",
+                        })}
+                      </a>
+                      <a
+                        href={item.socialmedia2}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {React.createElement(iconMap[item.socialmediaimg2], {
+                          className: "w-6 h-6 text-white hover:text-blue-400",
+                        })}
+                      </a>
+                      <a
+                        href={item.socialmedia3}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {React.createElement(iconMap[item.socialmediaimg3], {
+                          className: "w-6 h-6 text-white hover:text-blue-400",
+                        })}
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
