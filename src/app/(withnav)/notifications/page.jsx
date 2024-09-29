@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ColoredSection from "../../components/ColoredSection";
+import ColoredSection from "../../../components/ColoredSection";
 import { data } from "./content.js";
 
 const Notifications = () => {

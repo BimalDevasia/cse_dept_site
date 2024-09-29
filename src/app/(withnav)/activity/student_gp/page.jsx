@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { data } from "./content";
 import Image from "next/image";
-import ColoredSection from "../../../components/ColoredSection";
+import ColoredSection from "../../../../components/ColoredSection";
 
 export default function Page() {
   // Updated the function name to Page

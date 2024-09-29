@@ -2,7 +2,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { upcomingEvents, pastEvents } from "../eventsData";
 import { useEffect, useState } from "react";
-import ColoredSection from "../../../../components/ColoredSection";
+import ColoredSection from "../../../../../components/ColoredSection";
 
 export default function EventDetails() {
   const router = useRouter();

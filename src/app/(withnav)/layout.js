@@ -1,5 +1,5 @@
 import { Inter, Montserrat, Bebas_Neue } from "next/font/google";
-import "./globals.css";
+import "./global.css";
 import LenisScroll from "@/components/LenisScroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
         className={`${inter.className} ${montserrat.variable} ${bebasNeue.variable}`}
       >
         <LenisScroll>
-   
+        <Navbar/>
         {children}
-    
+        <Footer/>
         </LenisScroll>
       </body>
     </html>

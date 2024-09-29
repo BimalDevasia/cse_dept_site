@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { upcomingEvents, pastEvents } from "./eventsData";
-import ColoredSection from "../../../components/ColoredSection";
+import ColoredSection from "../../../../components/ColoredSection";
 
 const EventCard = ({ event }) => {
   const [isHovered, setIsHovered] = useState(false);

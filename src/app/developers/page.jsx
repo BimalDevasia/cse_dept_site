@@ -5,56 +5,104 @@ import React from "react";
 import { ImLinkedin2 } from "react-icons/im";
 import { BsTwitterX } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
+import { FaBehance } from "react-icons/fa";
 
 export default function Developers() {
+  const iconMap = {
+    ImLinkedin2: ImLinkedin2,
+    BsTwitterX: BsTwitterX,
+    FaGithub: FaGithub,
+    FaBehance: FaBehance,
+  };
+
   const data = [
     {
-      img: "/teams.png",
+      img: "/ali.jpeg",
       name: "Muhammad Ali",
       position: "UI-UX Designer",
-      linkedin: "https://www.linkedin.com/in/muhammad-ali", // LinkedIn URL
-      twitter: "https://twitter.com/muhammad-ali", // Twitter URL
-      github: "https://github.com/muhammad-ali", // GitHub URL
+      socialmedia1: "https://www.linkedin.com/in/muhammadalima",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://behance.com/muhammadalima",
+      socialmediaimg2: "FaBehance",
+      socialmedia3: "https://github.com/muhammadalima",
+      socialmediaimg3: "FaGithub",
     },
     {
-      img: "/teams.png",
+      img: "/ali.jpeg",
       name: "Muhammad Hashiq",
       position: "Full-Stack Developer",
-      linkedin: "https://www.linkedin.com/in/muhammad-hashiq",
-      twitter: "https://twitter.com/muhammad-hashiq",
-      github: "https://github.com/muhammad-hashiq",
+      socialmedia1: "https://www.linkedin.com/in/muhammad-hashiq",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/muhammad-hashiq",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/muhammad-hashiq",
+      socialmediaimg3: "FaGithub",
     },
     {
-      img: "/teams.png",
-      name: "Viswajith vp",
-      position: "Full-Stack Developer",
-      linkedin: "https://www.linkedin.com/in/viswajith-vp",
-      twitter: "https://twitter.com/viswajith-vp",
-      github: "https://github.com/viswajith-vp",
-    },
-    {
-      img: "/teams.png",
+      img: "/ali.jpeg",
       name: "Jerald Joyson",
       position: "Full-Stack Developer",
-      linkedin: "https://www.linkedin.com/in/jerald-joyson",
-      twitter: "https://twitter.com/jerald-joyson",
-      github: "https://github.com/jerald-joyson",
+      socialmedia1: "https://www.linkedin.com/in/jerald-joyson",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/jerald-joyson",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/jerald-joyson",
+      socialmediaimg3: "FaGithub",
     },
     {
-      img: "/teams.png",
+      img: "/bimal.jpeg",
       name: "Bimal Devasia",
       position: "Full-Stack Developer",
-      linkedin: "https://www.linkedin.com/in/bimal-devasia",
-      twitter: "https://twitter.com/bimal-devasia",
-      github: "https://github.com/bimal-devasia",
+      socialmedia1: "https://www.linkedin.com/in/bimal-devasia",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/bimal-devasia",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/bimal-devasia",
+      socialmediaimg3: "FaGithub",
     },
     {
-      img: "/teams.png",
+      img: "/nishan.jpeg",
       name: "Mohammad Nishan",
       position: "Full-Stack Developer",
-      linkedin: "https://www.linkedin.com/in/mohammad-nishan",
-      twitter: "https://twitter.com/mohammad-nishan",
-      github: "https://github.com/mohammad-nishan",
+      socialmedia1: "https://www.linkedin.com/in/mohammad-nishan",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/mohammad-nishan",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/mohammad-nishan",
+      socialmediaimg3: "FaGithub",
+    },
+    {
+      img: "/viswa.jpg",
+      name: "Viswajith vp",
+      position: "Full-Stack Developer",
+      socialmedia1: "https://www.linkedin.com/in/viswajith-vp",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/viswajith-vp",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/viswajith-vp",
+      socialmediaimg3: "FaGithub",
+    },
+    {
+      img: "/ali.jpeg",
+      name: "Amal Joseph",
+      position: "ML Developer",
+      socialmedia1: "https://www.linkedin.com/in/bimal-devasia",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/bimal-devasia",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/bimal-devasia",
+      socialmediaimg3: "FaGithub",
+    },
+    {
+      img: "/ali.jpeg",
+      name: "Rohini Kanth",
+      position: "ML Developer",
+      socialmedia1: "https://www.linkedin.com/in/mohammad-nishan",
+      socialmediaimg1: "ImLinkedin2",
+      socialmedia2: "https://twitter.com/mohammad-nishan",
+      socialmediaimg2: "BsTwitterX",
+      socialmedia3: "https://github.com/mohammad-nishan",
+      socialmediaimg3: "FaGithub",
     },
   ];
 
@@ -62,56 +110,62 @@ export default function Developers() {
     <ColoredSection>
       <div
         id="teams"
-        className="bg-[#0a0a0a] h-screen text-white px-20 pt-20 overflow-hidden"
+        className="bg-[#0a0a0a] h-screen text-white  px-8 pt-8 overflow-hidden"
       >
-        <h1 className="pt-8 text-[60px] md:text-[100px] font-semibold">
+        <h1 className="px-8 text-[60px] md:text-[100px] font-semibold">
           Meet our team
         </h1>
         <div className="mt-6 w-full">
           <div className="flex space-x-8 animate-marquee">
-            {data.concat(data).map((item, index) => (
+            {data.map((item, index) => (
               <div
                 key={index}
-                className="hover:z-50 inline-block min-w-[250px] md:min-w-[300px] transition-all duration-300 ease-in-out transform -translate-y-0 hover:-translate-y-10"
+                className="inline-block min-w-[250px] md:min-w-[300px] transition-all duration-300 ease-in-out transform hover:-translate-y-10 relative group"
               >
                 <Image
                   src={item.img}
                   alt="developer"
                   width={500}
                   height={200}
-                  className="rounded-lg w-auto h-[300px] md:h-[400px] object-cover"
+                  className="rounded-[48px] w-auto h-[900px] md:h-[500px] object-cover"
                 />
                 <div className="mt-4">
-                  <h3 className="text-xl md:text-2xl font-semibold">
+                  <h3 className="text-2xl md:text-3xl font-semibold">
                     {item.name}
                   </h3>
                   <div className="flex gap-2 mt-1">
-                    <div className="relative mt-2 w-4 h-4 bg-[#d9d9d9] rounded-lg" />
-                    <h2 className="text-lg md:text-xl font-semibold">
+                    <div className="relative mt-1 w-4 h-4 bg-[#d9d9d9] rounded-lg" />
+                    <h2 className="text-sm md:text-base font-mono  ">
                       {item.position}
                     </h2>
                   </div>
-                  <div className="flex space-x-4 mt-5">
+                  <div className="flex space-x-4 mt-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pb-4 ">
                     <a
-                      href={item.linkedin}
+                      href={item.socialmedia1}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <ImLinkedin2 className="w-6 h-6 text-white hover:text-blue-500" />
+                      {React.createElement(iconMap[item.socialmediaimg1], {
+                        className: "w-6 h-6 text-white hover:text-blue-500",
+                      })}
                     </a>
                     <a
-                      href={item.twitter}
+                      href={item.socialmedia2}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <BsTwitterX className="w-6 h-6 text-white hover:text-blue-400" />
+                      {React.createElement(iconMap[item.socialmediaimg2], {
+                        className: "w-6 h-6 text-white hover:text-blue-400",
+                      })}
                     </a>
                     <a
-                      href={item.github}
+                      href={item.socialmedia3}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaGithub className="w-6 h-6 text-white hover:text-blue-400" />
+                      {React.createElement(iconMap[item.socialmediaimg3], {
+                        className: "w-6 h-6 text-white hover:text-blue-400",
+                      })}
                     </a>
                   </div>
                 </div>

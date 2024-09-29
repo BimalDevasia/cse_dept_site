@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { MdOutlineNotifications } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ColoredSection from "../../components/ColoredSection";
+import ColoredSection from "../../../components/ColoredSection";
 
 
 function Home() {

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import HorizontalScroll from "../../../components/horizontal-scroll";
+import HorizontalScroll from "../../../../components/horizontal-scroll";
 
 const images = ["/bg.png", "/bg.png", "/bg.png", "/bg.png"];
 

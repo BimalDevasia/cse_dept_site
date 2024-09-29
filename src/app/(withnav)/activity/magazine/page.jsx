@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { departmentMagazine, pgMagazine, pgNewsLetter } from "./magazine";
 import Modal from "./modal";
-import ColoredSection from "../../../components/ColoredSection";
+import ColoredSection from "../../../../components/ColoredSection";
 
 const EventCard = ({ event, allImages }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
