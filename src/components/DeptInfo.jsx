@@ -12,7 +12,6 @@ import {
 } from "framer-motion";
 import ColoredSection from "./ColoredSection";
 import { useEffect, useRef, useState } from "react";
-import About from "@/app/aboutus/page";
 
 const DeptInfo = () => {
   const containerRef = useRef(null);
